@@ -10,6 +10,7 @@ import UserAccount from 'containers/UserAccount/Loadable';
 import Dashboard from 'containers/Dashboard/Loadable';
 import Role from 'containers/Role/Loadable';
 import EmailTemplate from 'containers/EmailTemplate/Loadable';
+import LabelCustom from 'containers/LabelCustom/Loadable';
 import Users from 'containers/Users/Loadable';
 import Permission from 'containers/Permission/Loadable';
 import Layout from 'components/Layout';
@@ -132,6 +133,19 @@ const routes = [
             defaultPermission={false}
           >
             <EmailTemplate />
+          </PrivateRoute>
+        ),
+      },
+      {
+        path: 'label-customs',
+        element: (
+          <PrivateRoute
+            path="/label-customs"
+            method="get"
+            resource="labelCustoms"
+            defaultPermission={false}
+          >
+            <LabelCustom />
           </PrivateRoute>
         ),
       },

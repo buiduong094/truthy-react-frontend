@@ -19,6 +19,10 @@ export default defineMessages({
     id: `${scope}.emailTemplatePage`,
     defaultMessage: `Email Template`,
   },
+  labelCustomPage: {
+    id: `${scope}.labelCustomPage`,
+    defaultMessage: `Label Custom`,
+  },
   userPage: {
     id: `${scope}.userPage`,
     defaultMessage: `User Management`,

@@ -55,4 +55,13 @@ export const menuList = [
     resource: 'emailTemplates',
     defaultPermission: false,
   },
+  {
+    name: <FormattedMessage {...messages.labelCustomPage} />,
+    icon: <MailOutlined />,
+    key: 'label-custom',
+    path: '/label-customs',
+    method: 'get',
+    resource: 'labelCustoms',
+    defaultPermission: false,
+  },
 ];

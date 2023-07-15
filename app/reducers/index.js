@@ -18,6 +18,7 @@ import permissionReducer from 'containers/Permission/reducer';
 import usersReducer from 'containers/Users/reducer';
 import DashboardReducer from 'containers/Dashboard/reducer';
 import emailTemplateReducer from 'containers/EmailTemplate/reducer';
+import labelCustomReducer from 'containers/LabelCustom/reducer';
 import homePageReducer from 'containers/HomePage/reducer';
 
 /**
@@ -41,6 +42,7 @@ export default function createReducer(injectedReducers = {}) {
     permission: permissionReducer,
     users: usersReducer,
     emailTemplate: emailTemplateReducer,
+    labelCustom: labelCustomReducer,
     ...injectedReducers,
   });
 }
